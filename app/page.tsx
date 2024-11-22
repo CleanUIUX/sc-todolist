@@ -1,7 +1,15 @@
+'use client';
+
+import { Main } from "@/src/page/Main";
+
+
+
+
+
 export default function Home() {
   return (
     <div>
-      <h4>hi</h4>
+      <Main />
     </div>
   );
 }
