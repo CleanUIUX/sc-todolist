@@ -14,6 +14,10 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
         mainColor: "#f84f39",
+        'custom-red': '#f84f39',
+      },
+      borderWidth: {
+        5:'5px',
       },
     },
   },
