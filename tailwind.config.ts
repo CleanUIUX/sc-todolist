@@ -15,10 +15,15 @@ export default {
         foreground: "var(--foreground)",
         mainColor: "#f84f39",
         'custom-red': '#f84f39',
+        titleColor: '#8e8da0',
       },
       borderWidth: {
         5:'5px',
       },
+      spacing: {
+        15:'15px',
+        30:'30px',
+      }
     },
   },
   plugins: [],
