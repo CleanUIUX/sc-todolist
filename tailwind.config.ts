@@ -14,6 +14,7 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
         mainColor: "#f84f39",
+        proColor: "#6b66da",
         'custom-red': '#f84f39',
         titleColor: '#8e8da0',
       },
