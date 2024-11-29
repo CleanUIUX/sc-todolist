@@ -16,6 +16,9 @@ export default {
         mainColor: "#f84f39",
         proColor: "#6b66da",
         'custom-red': '#f84f39',
+        customBg: '#c7c7de33',
+        ListsColor: '#72718a',
+        ListsText: '#26253b',
         titleColor: '#8e8da0',
       },
       borderWidth: {
