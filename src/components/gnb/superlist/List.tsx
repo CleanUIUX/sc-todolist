@@ -21,7 +21,7 @@ export const List = () => {
     return(
         <section className="px-10">
             <div className="flex gap-2 mt-[75px] p-3 border-2 rounded-[44px]">
-                <div className="flex flex-col p-6 border-2 rounded-[32px] bg-white">
+                <div className="flex flex-col flex-0.5 p-6 border-2 rounded-[32px] bg-white">
                     <div className="flex flex-wrap gap-2">
                         {items.map((item , index) => (
                             <div
@@ -53,8 +53,11 @@ export const List = () => {
                     </div>
                 </div>
                 {/* tab contents */}
-                <div>
+                <div className="flex-2">
                     {ActiveComponent ? <ActiveComponent /> : <p>No content available.</p>}
+                </div>
+                <div className="flex-1 rounded-[32px]">
+                    <img src="/assets/img-bg1.webp" alt="" className="rounded-[32px]" />
                 </div>
             </div>
         </section>
