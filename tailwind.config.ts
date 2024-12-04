@@ -20,6 +20,7 @@ export default {
         ListsColor: '#72718a',
         ListsText: '#26253b',
         titleColor: '#8e8da0',
+        countColor: '#b9b9da',
       },
       borderWidth: {
         5:'5px',
