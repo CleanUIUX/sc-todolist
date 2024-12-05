@@ -15,15 +15,8 @@ export const Checkbox = () => {
             type="checkbox" 
             checked={isCheck}
             onChange={handleCheck}
-            className="w-[25px] h-[25px] border-2 border-[#6c6c9e4d] rounded-lg"
+            className="w-[25px] h-[25px] border-2 border-[#6c6c9e4d] appearance-none rounded-lg"
             />
-            {/* <span
-            className={`text-lg font-medium ${
-                isCheck ? "line-through text-gray-400" : "text-black"
-            }`}
-            >
-                Marketing strategy
-            </span> */}
             <div
                 className={`inline-block relative text-lg font-medium  ${
                     isCheck ? "text-gray-400" : "text-black"
