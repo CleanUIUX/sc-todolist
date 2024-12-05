@@ -1,5 +1,7 @@
 'use client';
 
+import { Checkbox } from "../chkbox/Checkbox";
+
 const images = [
     { src: "/assets/img-terms1.jpg" , zIndex: "z-0"},
     { src: "/assets/img-terms1.jpg" , zIndex: "z-10"},
@@ -24,7 +26,7 @@ export const TabAppLaunch = () => {
             <h3 className="text-[40px] font-semibold text-ListsText">App Launch</h3>
             <p className="text-lg font-medium">Hey team, here's a quick recap of what we're working on ahead of the launch. Feel free to add any more notes or details to the tasks.</p>
             <div>
-                
+                <Checkbox />
             </div>
         </div>
     );
