@@ -19,7 +19,7 @@ export const List = () => {
 
 
     return(
-        <section className="max-w-[1250px] min-h-[700px] mx-auto">
+        <section className="max-w-[1250px] mx-auto">
             <div className="flex gap-2 mt-[75px] p-3 border-2 rounded-[44px]">
                 <div className="flex flex-col flex-0.5 p-6 border-2 rounded-[32px] bg-white">
                     <div className="flex flex-wrap gap-2">
