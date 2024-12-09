@@ -1,9 +1,11 @@
 'use client';
 
+import { TabAppLaunch } from "./TabAppLaunch";
+
 export const TabKitchenReno = () => {
     return (
         <div>
-            <h2>TabKitchenReno</h2>
+            <TabAppLaunch />
         </div>
     );
 };

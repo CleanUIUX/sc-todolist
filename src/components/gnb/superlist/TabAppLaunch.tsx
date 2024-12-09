@@ -2,6 +2,13 @@
 
 import { Checkbox } from "../chkbox/Checkbox";
 
+interface TabAppLaunchProps{
+    title: string;
+    description: string;
+    images?: { src: string; zIndex?: string }[];
+    checkboxs: string[];
+}
+
 const images = [
     { src: "/assets/img-terms1.jpg" , zIndex: "z-0"},
     { src: "/assets/img-terms1.jpg" , zIndex: "z-10"},
@@ -9,7 +16,12 @@ const images = [
     { src: "/assets/img-terms1.jpg" , zIndex: "z-30"},
 ]
 
-export const TabAppLaunch = () => {
+export const TabAppLaunch = ({
+    title,
+    description,
+    images = [],
+    checkboxs
+}: TabAppLaunchProps) => {
     return (
         <div className="flex flex-col h-full gap-[18px] p-6 border-2 rounded-[32px] bg-white">
             <div className="flex items-center">
