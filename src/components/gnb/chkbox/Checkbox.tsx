@@ -2,7 +2,11 @@
 
 import { useState } from "react";
 
-export const Checkbox = () => {
+interface CheckboxProps {
+    label: string;
+}
+
+export const Checkbox = ({ label }: CheckboxProps) => {
 
     const [isCheck , setIsCheck] = useState(false);
     const handleCheck = () => {
@@ -22,7 +26,7 @@ export const Checkbox = () => {
                     isCheck ? "text-gray-400" : "text-black"
                 }`}
                 >
-                Design system update
+                { label }
                 <span
                     className={`absolute left-0 top-1/2 h-[1px] w-full bg-gray-400 transform transition-transform duration-300 ease-in-out ${
                         isCheck ? "scale-x-100" : "scale-x-0"
