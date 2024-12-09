@@ -19,11 +19,10 @@ export const Checkbox = ({ label }: CheckboxProps) => {
             type="checkbox" 
             checked={isCheck}
             onChange={handleCheck}
-            className={`w-[25px] h-[25px] border-2 border-[#6c6c9e4d] appearance-none rounded-lg
-                ${isCheck ? "bg-center bg-no-repeat bg-inherit" : ""}
+            className={`w-[25px] h-[25px] border-2 border-[#6c6c9e4d] appearance-none rounded-lg bg-center bg-no-repeat bg-inherit
+                ${isCheck ? "bg-[url('/assets/icon-chk.svg')]" : ""}
                 `}
                 style={{
-                    // border: isCheck ? "border" : "0",
                     backgroundImage: isCheck ? "url('/assets/icon-chk.svg')" : "",
                 }}
             />
