@@ -19,7 +19,13 @@ export const Checkbox = ({ label }: CheckboxProps) => {
             type="checkbox" 
             checked={isCheck}
             onChange={handleCheck}
-            className="w-[25px] h-[25px] border-2 border-[#6c6c9e4d] appearance-none rounded-lg"
+            className={`w-[25px] h-[25px] border-2 border-[#6c6c9e4d] appearance-none rounded-lg
+                ${isCheck ? "bg-center bg-no-repeat bg-inherit" : ""}
+                `}
+                style={{
+                    // border: isCheck ? "border" : "0",
+                    backgroundImage: isCheck ? "url('/assets/icon-chk.svg')" : "",
+                }}
             />
             <div
                 className={`inline-block relative text-lg font-medium  ${
