@@ -5,7 +5,7 @@ import { TabAppLaunch } from "./TabAppLaunch";
 export const TabKitchenReno = () => {
     return (
         <div>
-            <TabAppLaunch />
+            {/* <TabAppLaunch /> */}
         </div>
     );
 };
