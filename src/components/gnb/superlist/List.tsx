@@ -35,6 +35,21 @@ const listItems = [
             checkboxs: ["system update1", "system update2", "system update3"],
         }
     },
+    {
+        id: 3, 
+        emoji: "🧘", 
+        text: "Daily Habits", 
+    },
+    {
+        id: 4, 
+        emoji: "🍔", 
+        text: "Recipes", 
+    },
+    {
+        id: 5, 
+        emoji: "✏️", 
+        text: "Design Work", 
+    },
 ]
 
 export const List = () => {
