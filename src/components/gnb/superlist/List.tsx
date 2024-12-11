@@ -2,15 +2,39 @@
 import { Component, useState } from "react";
 import { TabAppLaunch } from "./TabAppLaunch";
 import { TabKitchenReno } from "./TabKitchenReno";
+import { title } from "process";
 
-const items = [1, 2, 3, 4];
+const list =[1, 2, 3, 4]
 
 const listItems = [
-    { id: 1, emoji: "💥", text: "App Launch", component: TabAppLaunch},
-    { id: 2, emoji: "🏡", text: "Kitchen Reno", component: TabKitchenReno},
-    { id: 3, emoji: "🧘", text: "Daily Habits" },
-    { id: 4, emoji: "🍔", text: "Recipes" },
-    { id: 5, emoji: "✏️", text: "Design Work" },
+    {
+        id: 1, 
+        emoji: "💥", 
+        text: "App Launch", 
+        component: TabAppLaunch, 
+        props: {
+            title: "App Luncher",
+            decription: "Quick recap of what we're working on for the launch.",
+            images: [
+                { src: "/assets/img-terms1.jpg", zIndex: "z-0" },
+                { src: "/assets/img-terms1.jpg", zIndex: "z-10" },
+                { src: "/assets/img-terms1.jpg", zIndex: "z-20" },
+                { src: "/assets/img-terms1.jpg", zIndex: "z-30" },
+            ],
+            checkboxs: ["Design system update1", "Design system update2", "Design system update3"],
+        }
+    },
+    {
+        id: 2, 
+        emoji: "🏡", 
+        text: "Kitchen Reno", 
+        component: TabAppLaunch, 
+        props: {
+            title: "Kitchen Reno",
+            decription: "Planning our dream kitchen redesign.",
+            checkboxs: ["system update1", "system update2", "system update3"],
+        }
+    },
 ]
 
 export const List = () => {
@@ -23,7 +47,7 @@ export const List = () => {
             <div className="flex gap-2 mt-[75px] p-3 border-2 rounded-[44px]">
                 <div className="flex flex-col flex-0.5 p-6 border-2 rounded-[32px] bg-white">
                     <div className="flex flex-wrap gap-2">
-                        {items.map((item , index) => (
+                        {list.map((item , index) => (
                             <div
                             key={index}
                             className="flex-1 h-[62px] bg-customBg rounded-[20px]"
@@ -54,7 +78,12 @@ export const List = () => {
                 </div>
                 {/* tab contents */}
                 <div className="flex-2">
-                    {ActiveComponent ? <ActiveComponent /> : <p>No content available.</p>}
+                    {ActiveComponent ? (
+                        <ActiveComponent {...listItems.find((tab) => tab.id === activeTab)?.props} />
+                    ) : (
+                        <p>No content available.</p>
+                    )}
+
                 </div>
                 <div className="flex-1 rounded-[32px]">
                     <img src="/assets/img-bg1.webp" alt="" className="rounded-[32px]" />
