@@ -1,7 +1,6 @@
 'use client';
 import { Component, useState } from "react";
 import { TabAppLaunch } from "./TabAppLaunch";
-import { TabKitchenReno } from "./TabKitchenReno";
 import { title } from "process";
 
 const list =[1, 2, 3, 4]

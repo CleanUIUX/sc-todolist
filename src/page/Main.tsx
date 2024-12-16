@@ -1,8 +1,11 @@
 'use client';
 
 import { Gnb } from "../components/gnb/Gnb";
-import { Introduce } from "../components/gnb/introduce/Introduce";
-import { List } from "../components/gnb/superlist/List";
+import { Introduce } from "../components/introduce/Introduce";
+import { Sticky } from "../components/sticky/Sticky";
+import { List } from "../components/superlist/List";
+
+
 
 export const Main = () => {
     return(
@@ -10,6 +13,7 @@ export const Main = () => {
         <Gnb />
         <Introduce />
         <List />
+        <Sticky />
         </>
     )
 }
