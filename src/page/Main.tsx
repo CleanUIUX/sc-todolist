@@ -11,9 +11,13 @@ export const Main = () => {
     return(
         <>
         <Gnb />
+        <Sticky top="20px">
+                <div className="p-4 bg-blue-500 font-bold rounded-md">
+                    I am Sticky on the Main Page!
+                </div>
+        </Sticky>
         <Introduce />
         <List />
-        <Sticky />
         </>
     )
 }
