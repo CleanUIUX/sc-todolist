@@ -17,7 +17,7 @@ const videoSources = [
 
 export const TabList = () => {
     return(
-        <section className="max-w-[1250px] flex justify-between  mx-auto">
+        <section className="max-w-[1250px] flex justify-between items-center mx-auto">
             <ul>
                 {features.map((feature , index) => (
                     <Tabdesc key={index} title={feature.title} description={feature.description}></Tabdesc>

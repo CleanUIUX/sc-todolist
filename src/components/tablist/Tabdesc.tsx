@@ -4,9 +4,9 @@ interface TabdescProps {
 }
 
 const Tabdesc: React.FC<TabdescProps> = ({ title, description }) => (
-  <li>
-    <p>{title}</p>
-    <span>{description}</span>
+  <li className="mt-[30px]">
+    <p className="text-2xl font-bold">{title}</p>
+    <span className="text-lg">{description}</span>
   </li>
 );
 
