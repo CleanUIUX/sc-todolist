@@ -1,12 +1,19 @@
 'use client';
 
 import Tabdesc from "./Tabdesc";
+import VideoPlayer from "./Videoplayer";
 
 const features = [
     { title: 'Natural Language', description: 'Type dates and set due dates into tasks' },
     { title: 'Nested Tasks', description: 'Infinite level of subtasks' },
     { title: 'Tasks from Integrations', description: 'Slack messages, Linear tickets, & Github issues together' },
   ];
+
+const videoSources = [
+'/assets/video1.mp4',
+'/assets/video2.mp4',
+'/assets/video3.mp4',
+];
 
 export const TabList = () => {
     return(
@@ -17,42 +24,9 @@ export const TabList = () => {
                 ))}
             </ul>
             <div>
-                <div>
-                    <video 
-                        className="w-full h-60 pointer-events-none" 
-                        controls 
-                        autoPlay 
-                        loop 
-                        muted
-                        >
-                        <source src="/assets/video1.mp4" type="video/mp4" />
-                        Your browser does not support the video tag.
-                    </video>
-                </div>
-                <div>
-                    <video 
-                        className="w-full h-60 pointer-events-none" 
-                        controls 
-                        autoPlay 
-                        loop 
-                        muted
-                        >
-                        <source src="/assets/video2.mp4" type="video/mp4" />
-                        Your browser does not support the video tag.
-                    </video>
-                </div>
-                <div>
-                    <video 
-                        className="w-full h-60 pointer-events-none" 
-                        controls 
-                        autoPlay 
-                        loop 
-                        muted
-                        >
-                        <source src="/assets/video3.mp4" type="video/mp4" />
-                        Your browser does not support the video tag.
-                    </video>
-                </div>
+                {videoSources.map((src , index) => (
+                    <VideoPlayer key={index} src={src} />
+                ))}
             </div>
         </section>
 

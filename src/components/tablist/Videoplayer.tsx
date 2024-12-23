@@ -17,6 +17,6 @@ const VideoPlayer : React.FC<VideoPlayerProps> = ({src}) => (
         Your browser does not support the video tag.
         </video>
     </div>
-));
+);
 
 export default VideoPlayer;
