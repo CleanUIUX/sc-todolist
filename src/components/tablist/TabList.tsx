@@ -1,21 +1,21 @@
 'use client';
 
+import Tabdesc from "./Tabdesc";
+
+
+const features = [
+    { title: 'Natural Language', description: 'Type dates and set due dates into tasks' },
+    { title: 'Nested Tasks', description: 'Infinite level of subtasks' },
+    { title: 'Tasks from Integrations', description: 'Slack messages, Linear tickets, & Github issues together' },
+  ];
+
 export const TabList = () => {
     return(
-        <section className="max-w-[1250px] mx-auto">
+        <section className="max-w-[1250px] flex justify-between  mx-auto">
             <ul>
-                <li>
-                    <p>Natural Language</p>
-                    <span>Type dates and set due dates into tasks</span>
-                </li>
-                <li>
-                    <p>Nested Tasks</p>
-                    <span>Infinite level of subtasks</span>
-                </li>
-                <li>
-                    <p>Tasks from Integrations</p>
-                    <span>Slack messages, Linear tickets, & Github issues together</span>
-                </li>
+                {features.map((feature , index) => (
+
+                ))}
             </ul>
             <div>
                 <div>
