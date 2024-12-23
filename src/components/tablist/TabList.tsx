@@ -2,7 +2,6 @@
 
 import Tabdesc from "./Tabdesc";
 
-
 const features = [
     { title: 'Natural Language', description: 'Type dates and set due dates into tasks' },
     { title: 'Nested Tasks', description: 'Infinite level of subtasks' },
