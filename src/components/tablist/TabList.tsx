@@ -14,7 +14,7 @@ export const TabList = () => {
         <section className="max-w-[1250px] flex justify-between  mx-auto">
             <ul>
                 {features.map((feature , index) => (
-
+                    <Tabdesc key={index} title={feature.title} description={feature.description}></Tabdesc>
                 ))}
             </ul>
             <div>
